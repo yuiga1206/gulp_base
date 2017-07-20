@@ -1,0 +1,49 @@
+{
+  "pages": [
+    {
+      "id": "index",
+      "parentId": "",
+      "title": "トップページ"
+    },
+    {
+      "id": "index",
+      "parentId": "store",
+      "title": "メニューページ"
+    },
+    {
+      "id": "index",
+      "parentId": "brand",
+      "title": "メニューページ"
+    },
+    {
+      "id": "index",
+      "parentId": "detail",
+      "title": "メニューページ"
+    },
+    {
+      "id": "index",
+      "parentId": "contact",
+      "title": "メニューページ"
+    },
+    {
+      "id": "index",
+      "parentId": "sitemap",
+      "title": "メニューページ"
+    },
+    {
+      "id": "index",
+      "parentId": "privacy",
+      "title": "メニューページ"
+    },
+    {
+      "id": "index",
+      "parentId": "blog",
+      "title": "メニューページ"
+    },
+    {
+      "id": "index",
+      "parentId": "blog_detail",
+      "title": "メニューページ"
+    }
+  ]
+}

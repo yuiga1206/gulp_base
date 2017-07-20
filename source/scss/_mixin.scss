@@ -1,0 +1,73 @@
+@mixin cf{
+  zoom: 1;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin fontSize($fontSize, $baseFontSize:14){
+  font-size: percentage($fontSize / $baseFontSize);
+}
+
+
+
+// =============================================
+//              -----SP用mixin-----
+// =============================================
+// デザインデータ上のカンバスサイズ
+$baseSpWidth:640;
+
+// 要素のpx数を％に変換（小数点以下四捨五入）
+@mixin spWidth($spWidth){
+  width: round(percentage($spWidth / $baseSpWidth));
+}
+// 例：  @include spWidth(286);
+
+// 左右のpx数を％に変換（小数点以下四捨五入）
+@mixin paddingRight($right){
+  padding-right: round(percentage($right / $baseSpWidth));
+}
+@mixin paddingLeft($left){
+  padding-left: round(percentage($left / $baseSpWidth));
+}
+@mixin padding($top, $right, $bottom:null, $left:null){
+  @if $bottom == null {
+    padding: $top round(percentage($right / $baseSpWidth));
+  }
+  @else {
+    @if $left == null {
+      padding: $top round(percentage($right / $baseSpWidth)) $bottom;
+    }
+    @else {
+      padding: $top round(percentage($right / $baseSpWidth)) $bottom round(percentage($left / $baseSpWidth));
+    }
+  }
+}
+@mixin marginRight($right){
+  margin-right: round(percentage($right / $baseSpWidth));
+}
+@mixin marginLeft($left){
+  margin-left: round(percentage($left / $baseSpWidth));
+}
+@mixin margin($top, $right, $bottom:null, $left:null){
+  @if $bottom == null {
+    margin: $top round(percentage($right / $baseSpWidth));
+  }
+  @else {
+    @if $left == null {
+      margin: $top round(percentage($right / $baseSpWidth)) $bottom;
+    }
+    @else {
+      margin: $top round(percentage($right / $baseSpWidth)) $bottom round(percentage($left / $baseSpWidth));
+    }
+  }
+}
+// 例：  @include margin(1.4rem, 23, 1rem);
+
+// レスポンシブの場合のため、IE8以下用フォントサイズ
+@mixin fontsize($size: 24, $base: 10) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}

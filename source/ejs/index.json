@@ -1,0 +1,7 @@
+{
+  "siteName": "サイトのタイトル",
+  "pageTitle": "そのページのタイトル",
+  "description": "ディスクリプション",
+  "keywords": "キーワード,が,入ります",
+  "homeURL": "http://localhost:3000/"
+}

@@ -1,0 +1,21 @@
+.topHeader {
+  background-color: $c-black;
+  &-hero {
+    width: $w-hero;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: bold;
+    padding: 45px 0 110px 710px;
+    box-sizing: border-box;
+    background: url("../img/header_img_01.png") center 0 no-repeat;
+    > p {
+      margin-bottom: 30px;
+    }
+  }
+  &-tab {
+    padding: 43px 0 0;
+    > p {
+      margin-bottom: 54px;
+    }
+  }
+}

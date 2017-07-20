@@ -1,0 +1,197 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+html {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, Sans-Serif;
+  color: #505050;
+  text-align: left;
+  background-color: #FFF;
+}
+
+a {
+  color: #505050;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+.l-inner {
+  width: 1000px;
+  margin: 0 auto;
+  zoom: 1;
+}
+
+.l-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#footer {
+  position: relative;
+}
+
+#footer #pagetop {
+  display: none;
+  right: 10px;
+}
+
+#footer #pagetop a {
+  display: block;
+  background: #CCC;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+#footer #pagetop.fixed {
+  position: fixed;
+  bottom: 10px;
+}
+
+#footer #pagetop.static {
+  position: absolute;
+  top: -60px;
+}
+
+#footer .footer_main {
+  background: #CCC;
+}
+
+#footer .footer_main #f_navi {
+  text-align: center;
+}
+
+#footer .footer_main #f_navi li {
+  display: inline;
+}
+
+#footer .copy {
+  text-align: center;
+}
+
+.topHeader {
+  background-color: #3d3f44;
+}
+
+.topHeader-hero {
+  width: 1262px;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: bold;
+  padding: 45px 0 110px 710px;
+  box-sizing: border-box;
+  background: url("../img/header_img_01.png") center 0 no-repeat;
+}
+
+.topHeader-hero > p {
+  margin-bottom: 30px;
+}
+
+.topHeader-tab {
+  padding: 43px 0 0;
+}
+
+.topHeader-tab > p {
+  margin-bottom: 54px;
+}
+
+.topHeader {
+  background-color: #3d3f44;
+}
+
+.topHeader-hero {
+  width: 1262px;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: bold;
+  padding: 45px 0 110px 710px;
+  box-sizing: border-box;
+  background: url("../img/header_img_01.png") center 0 no-repeat;
+}
+
+.topHeader-hero > p {
+  margin-bottom: 30px;
+}
+
+.topHeader-tab {
+  padding: 43px 0 0;
+}
+
+.topHeader-tab > p {
+  margin-bottom: 54px;
+}
+
+/*# sourceMappingURL=style.css.map */

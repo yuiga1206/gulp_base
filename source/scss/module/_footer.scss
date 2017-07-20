@@ -1,0 +1,35 @@
+#footer {
+  position: relative;
+}
+#footer #pagetop {
+  display: none;
+  right: 10px;
+}
+#footer #pagetop a {
+  display: block;
+  background: #CCC;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+#footer #pagetop.fixed {
+  position: fixed;
+  bottom: 10px;
+}
+#footer #pagetop.static {
+  position: absolute;
+  top: -60px;
+}
+#footer .footer_main {
+  background: #CCC;
+}
+#footer .footer_main #f_navi {
+  text-align: center;
+}
+#footer .footer_main #f_navi li {
+  display: inline;
+}
+#footer .copy {
+  text-align: center;
+}
