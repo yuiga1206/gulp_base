@@ -1,12 +1,16 @@
 {
-  "name": "ejs base template",
+  "name": "ejs-base-template",
   "version": "1.0.0",
-  "description": "static coding data",
+  "description": "static coding template",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "yuta adachi",
+  "author": "yuta adachi <yuiga1206@gmail> (https://github.com/yuiga1206)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuiga1206/gulp_base.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.11.1",
