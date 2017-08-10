@@ -1,15 +1,16 @@
 // =============================================
 //              -----Font-----
 // =============================================
-// $serif: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
-$sans-serif: YuGothic, "游ゴシック", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, Sans-Serif;
+$serif: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+$sans-serif: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, Sans-Serif;
+$sans-serif-yu: YuGothic, "游ゴシック", "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, Sans-Serif;
 
 
 
 // =============================================
 //              -----width-----
 // =============================================
-$w-hero: 1262px;
+$w-hero: 1000px;
 
 
 
@@ -19,194 +20,10 @@ $w-hero: 1262px;
 $c-font: #505050;
 $c-gray: #919191;
 
-$c-black: #3d3f44;// ヘッダー背景・フッターの線など
+$c-black: #000;// ヘッダー背景・フッターの線など
 $c-green: #017630;// 見出し・ボタンなど
 
-$c-gamewear: #60a88b;// 緑
-$c-jersey: #f1b742;// 橙色
-$c-piste: #d54b40;// 赤
-$c-windbreaker: #5ba2b6;// 浅葱色
-$c-warmer: #8080b5;// 紫
-
-
-
-
-// -----汎用系-----
-// item
-// elm
-// box
-// inner
-// column
-// col
-// grid
-// card
-// feature
-// area
-// base
-// section
-// block
-// extra
-// field
-//
-//
-// btn
-// button
-// link
-// list
-// attention
-// warning
-// notes
-// title
-// num
-// txt
-// desc
-// search
-// dropdown
-// overlay
-// form
-// topic : 話題
-// lead : 案内
-// spot : 注目情報
-// spotlight
-// guide
-// assist
-// option
-// separator : 区切り線
-//
-//
-// -----限定的なエリアやその他の名前一覧-----
-// common
-// breadcrumb
-// topicPath
-//
-// bnr
-// mainVisual
-// slide
-// thumb
-// thumbPic
-// thumbnail
-// avater
-// image
-// img
-// icon
-//
-// summary
-// detail
-// more
-// caption ：キャプション、ちょっとした説明
-// entry ：エントリー、記事部分
-// entryBody
-// entryblock
-// entrydate
-//
-// ttl
-// message
-// msg
-// info, informaiton
-// data
-// description
-//
-// firstChild
-// lastChild
-// date
-// category
-// tag
-// genre ：ジャンル、種類系
-// division ：何かを分けているものやエリア
-// eachArea ：それぞれのエリア（繰り返し表示するブロックなどに）
-// toTop ：トップへ戻るボタン
-// articles
-// comments
-// users
-//
-//
-//
-// -----要素の上部やヘッダー付近に使えるもの一覧-----
-// header
-// head
-// heading
-// top
-// headline
-// topArea
-// sitemast
-// pagetop
-// intro
-//
-// -----ナビゲーション要素で使えるもの一覧-----
-// globalNavi
-// gnavi
-// gnav
-// navigation
-// navi
-// nav
-// topNav
-// navcontainer
-// contentNavi
-// globalMenu
-// gMenu
-//
-//
-// -----ページの中で主役となるエリアや中心となるコンテンツに使えるもの一覧-----
-// main
-// mainArea
-// blockArea
-// mainSection
-// mainBox
-// contentBlock
-// maincontent
-// content
-// contents
-// main
-// maincol
-// mainbox
-//
-//
-// -----サイドバーやサイドに置くコンテンツ用に使えるもの一覧-----
-// side
-// sidebar
-// sideOne
-// sideTwo
-// sideMenu
-// sideContent
-// sideArea
-// sideLink
-// sideBnr
-// sideBlock
-// menu
-// sub
-// subNav
-// links
-// linkList
-// ashtray
-// col
-//
-//
-// -----要素の下部や下エリアコンテンツ用に使えるもの一覧-----
-// footer
-// foot
-// bottom
-// bottomArea
-// footerArea
-// boxFoot
-// boxBottom
-// blockFoot
-// blockBottom
-// copyright
-//
-//
-// -----囲う系の名前使えるもの一覧-----
-// wrap
-// wrapper
-// inner
-// outer
-// global
-// home
-// hero
-// page
-// container
-// all
-// body
-// box
-// layout
-// frame
-// carrier
+$c-orange: #f1b742;// 橙色
+$c-red: #d54b40;// 赤
+$c-lightGreen: #5ba2b6;// 浅葱色
+$c-purple: #8080b5;// 紫

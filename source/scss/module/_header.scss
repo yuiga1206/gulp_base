@@ -1,0 +1,8 @@
+.header {
+  @extend %inner;
+  &-menu {
+    a {
+      @extend %link;
+    }
+  }
+}

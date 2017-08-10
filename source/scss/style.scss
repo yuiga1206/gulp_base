@@ -5,6 +5,7 @@
 @import "setting";
 @import "mixin";
 
+@import "sanitize";
 @import "base";
 
 // Layout
@@ -12,6 +13,4 @@
 
 // Module
 @import "module/*";
-// @import "module/topHeader";
-// @import "module/mainTab";
-// @import "module/footer";
+
