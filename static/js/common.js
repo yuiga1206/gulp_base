@@ -40,7 +40,7 @@ $(function(){
     });
 
     // ページ内リンクのスムーススクロール
-    $('a[href^=#]').click(function() {
+    $('a[href^="#"]').click(function() {
          // スクロールの速度
       var speed = 400; // ミリ秒
       // アンカーの値取得
