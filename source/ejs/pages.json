@@ -1,49 +1,175 @@
 {
   "pages": [
     {
+      "mySlug": "top",
       "id": "index",
       "parentId": "",
-      "title": "トップページ"
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
     },
     {
+      "mySlug": "company",
       "id": "index",
-      "parentId": "store",
-      "title": "メニューページ"
+      "parentId": "company",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
     },
     {
+      "mySlug": "outline",
+      "id": "outline",
+      "parentId": "company",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
+    },
+    {
+      "mySlug": "philosophy",
+      "id": "philosophy",
+      "parentId": "company",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
+    },
+    {
+      "mySlug": "history",
+      "id": "history",
+      "parentId": "company",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
+    },
+    {
+      "mySlug": "map",
+      "id": "map",
+      "parentId": "company",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
+    },
+    {
+      "mySlug": "policy",
+      "id": "policy",
+      "parentId": "company",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
+    },
+    {
+      "mySlug": "compliance",
+      "id": "compliance",
+      "parentId": "company",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
+    },
+    {
+      "mySlug": "haken_agenda",
+      "id": "haken_agenda",
+      "parentId": "company",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
+    },
+    {
+      "mySlug": "shokai_agenda",
+      "id": "shokai_agenda",
+      "parentId": "company",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
+    },
+    {
+      "mySlug": "provided",
+      "id": "provided",
+      "parentId": "company",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
+    },
+    {
+      "mySlug": "occupations",
+      "id": "occupations",
+      "parentId": "company",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
+    },
+    {
+      "mySlug": "recruit",
       "id": "index",
-      "parentId": "brand",
-      "title": "メニューページ"
+      "parentId": "recruit",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
     },
     {
-      "id": "index",
-      "parentId": "detail",
-      "title": "メニューページ"
-    },
-    {
+      "mySlug": "contact",
       "id": "index",
       "parentId": "contact",
-      "title": "メニューページ"
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
     },
     {
-      "id": "index",
-      "parentId": "sitemap",
-      "title": "メニューページ"
+      "mySlug": "privacy",
+      "id": "privacy",
+      "parentId": "info",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
     },
     {
-      "id": "index",
-      "parentId": "privacy",
-      "title": "メニューページ"
+      "mySlug": "security",
+      "id": "security",
+      "parentId": "info",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
     },
     {
-      "id": "index",
-      "parentId": "blog",
-      "title": "メニューページ"
+      "mySlug": "purpose",
+      "id": "purpose",
+      "parentId": "info",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
     },
     {
-      "id": "index",
-      "parentId": "blog_detail",
-      "title": "メニューページ"
+      "mySlug": "p-check",
+      "id": "p-check",
+      "parentId": "info",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
+    },
+    {
+      "mySlug": "not_found",
+      "id": "404",
+      "parentId": "",
+      "title": "",
+      "description": "",
+      "keywords": "",
+      "og:url": ""
     }
   ]
 }

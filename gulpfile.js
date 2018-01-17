@@ -26,17 +26,18 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('ejs', function() {
-  var index_json_file = 'source/ejs/index.json';
+  // var index_json_file = 'source/ejs/index.json';
   var pages_json_file = 'source/ejs/pages.json';
-  var index_json = JSON.parse(fs.readFileSync(index_json_file));
+  // var index_json = JSON.parse(fs.readFileSync(index_json_file));
   var pages_json = JSON.parse(fs.readFileSync(pages_json_file));
   var page_data = pages_json.pages;
   for (var i = 0; i < page_data.length; i++) {
     var id = page_data[i].id;
     var parentId = page_data[i].parentId;
-    gulp.src("source/ejs/" + parentId + "/index.ejs")
+    gulp.src("source/ejs/" + parentId + "/" + id + ".ejs")
       .pipe(plumber())
-      .pipe(ejs(index_json, {
+      // .pipe(ejs(index_json, {
+      .pipe(ejs({
           pageData: page_data[i]
       }))
       .pipe(rename(id + ".html"))
