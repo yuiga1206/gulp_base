@@ -13,6 +13,7 @@ var browserSync = require('browser-sync').create();
 var running_tasks = [
   'sass',
   'ejs',
+  'js',
   'browser-sync'
 ];
 
@@ -61,8 +62,17 @@ gulp.task('sass', function() {
     .pipe(browserSync.reload({stream:true}));
 });
 
+gulp.task('js', function () {
+  gulp.src(["source/js/**/*.js","!source/js/**/_*.js"])
+ .pipe(plumber())
+ .pipe(concat('common.js'))
+ .pipe(gulp.dest('static/js/'))
+ .pipe(browserSync.reload({stream:true}));
+});
+
 
 gulp.task('default', running_tasks, function() {
   gulp.watch(['source/scss/**/*.scss'], ['sass']);
   gulp.watch(['source/ejs/**/*.ejs'], ['ejs']);
+  gulp.watch(['source/js/**/*.js'], ['js']);
 });
