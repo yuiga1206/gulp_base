@@ -8,6 +8,7 @@ var sourcemaps = require("gulp-sourcemaps");
 var ejs = require("gulp-ejs");
 var rename = require("gulp-rename");
 var browserSync = require('browser-sync').create();
+var concat = require('gulp-concat');
 
 
 var running_tasks = [
