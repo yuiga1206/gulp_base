@@ -10,6 +10,18 @@ var rename = require("gulp-rename");
 var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 
+// ================================================
+// SSI用
+//
+// 参考URL：http://cly7796.net/wp/other/use-ssi-with-browser-sync/
+// 参考リポジトリ：https://bitbucket.org/bon_dev/jr_hokurikueticket_static/src/master/
+//
+// 最初ににプラグインをインストールする：npm install connect-ssi --save-dev
+//
+// HTMLへの埋め込み例：<!--#include virtual="/goyoyaku/news/e5489-hokuriku-eticket/assets/rwd-header/header.html"-->
+// ================================================
+// var connectSSI = require('connect-ssi');
+
 
 var running_tasks = [
   'sass',
@@ -25,6 +37,25 @@ gulp.task('browser-sync', function() {
     }
   });
 });
+
+
+// ================================================
+// SSI用
+// ================================================
+// gulp.task('browser-sync', function() {
+//   browserSync.init({
+//     server: {
+//       baseDir: 'static/',
+//       middleware: [
+//         connectSSI({
+//           baseDir: __dirname + '/static/',
+//           ext: '.html'
+//         })
+//       ]
+//     }
+//   });
+// });
+
 
 
 gulp.task('ejs', function() {
