@@ -8,7 +8,6 @@ var sourcemaps = require("gulp-sourcemaps");
 var ejs = require("gulp-ejs");
 var rename = require("gulp-rename");
 var browserSync = require('browser-sync').create();
-var concat = require('gulp-concat');
 
 // ================================================
 // SSI用
@@ -97,7 +96,6 @@ gulp.task('sass', function() {
 gulp.task('js', function () {
   gulp.src(["source/js/**/*.js","!source/js/**/_*.js"])
  .pipe(plumber())
- .pipe(concat('common.js'))
  .pipe(gulp.dest('static/js/'))
  .pipe(browserSync.reload({stream:true}));
 });
