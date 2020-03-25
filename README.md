@@ -79,7 +79,8 @@
 * source内の .scss / .ejs / .js ファイルを保存すると、自動的にブラウザをリロードする。
 * source/ejs/pages.jsonに記載されていて、かつsource/ejs内にそのejsファイルがあれば、ejsからhtmlにコンパイルし、static内に書き出す。
 * source/js内の先頭にアンダースコアがつかないファイルを、scssからcssにコンパイルし、static/css/内に書き出す。
-* source/js内の先頭にアンダースコアがつかないファイルを、一つにまとめてstatic/js/common.jsとして書き出す。
+* source/js内の先頭にアンダースコアがつかないファイルを、static/js/common.jsとして書き出す。
+* jsファイルを圧縮する記述：console関数が無視されるので、開発段階ではコメントアウトしておく。
 
 ---
 
