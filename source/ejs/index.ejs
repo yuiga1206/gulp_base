@@ -3,7 +3,14 @@
     <main>
       <section>
         <h1>見出し1</h1>
-        <p>テキストテキスト</p>
+        <p>
+          <picture>
+            <source media="(max-width: 767px)" type="image/webp" srcset="img/webp/mv.webp">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/webp/mv_pc.webp">
+            <source media="(max-width: 767px)" srcset="img/mv.png">
+            <img src="img/mv_pc.png" alt="メインビジュアル">
+          </picture>
+        </p>
         <h2>見出し2</h2>
         <p>テキストテキスト</p>
       </section>

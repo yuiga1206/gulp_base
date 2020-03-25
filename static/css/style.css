@@ -705,3 +705,19 @@ figure {
 .footer .copy {
   text-align: center;
 }
+
+.header-logo {
+  width: 20vw;
+}
+
+@media screen and (min-width: 768px), print {
+  .header-logo {
+    width: 12.5vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    width: 150px;
+  }
+}

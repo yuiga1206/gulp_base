@@ -12,9 +12,10 @@
     <base href="http://localhost:3000/">
     
 
+
+    <!-- OGP -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" sizes="180x180">
-    <meta property="fb:app_id" content="1602984273120597">
     
       <meta property="og:type" content="website">
     
@@ -28,6 +29,21 @@
     <meta name="twitter:image" content="">
     <meta name="twitter:title" content="">
     
+    <!-- OGP -->
+
+
+    <!-- ソース先読み -->
+    <link rel="preload" href="img/logo.png" as="image">
+
+    <link rel="preload" href="img/webp/mv.webp" as="image" media="(max-width: 767px)" type="image/webp">
+    <link rel="preload" href="img/mv.png" as="image" media="(max-width: 767px)">
+
+    <link rel="preload" href="css/style.css" as="style">
+
+    <link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" as="script" crossorigin>
+    <link rel="preload" href="js/common.js" as="script">
+    <!-- ソース先読み -->
+
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -40,7 +56,7 @@
   <body class="top">
     <header class="header">
       <div class="header-logo">
-        <p><img src="img/250x50.png" alt=""></p>
+        <p><img src="img/logo.png" alt="ロゴ"></p>
       </div>
       <nav class="header-menu">
         <ul>
@@ -57,7 +73,14 @@
     <main>
       <section>
         <h1>見出し1</h1>
-        <p>テキストテキスト</p>
+        <p>
+          <picture>
+            <source media="(max-width: 767px)" type="image/webp" srcset="img/webp/mv.webp">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/webp/mv_pc.webp">
+            <source media="(max-width: 767px)" srcset="img/mv.png">
+            <img src="img/mv_pc.png" alt="メインビジュアル">
+          </picture>
+        </p>
         <h2>見出し2</h2>
         <p>テキストテキスト</p>
       </section>
