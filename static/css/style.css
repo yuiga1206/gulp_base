@@ -652,6 +652,18 @@ figure {
   margin: 0;
 }
 
+@media screen and (min-width: 768px), print {
+  .sp {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+}
+
 .header {
   width: 100%;
   margin: 0 auto;
