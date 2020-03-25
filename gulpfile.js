@@ -83,7 +83,8 @@ gulp.task('sass', function() {
   gulp.src(["source/scss/**/*.scss","!source/scss/**/_*.scss"])
     .pipe(plumber())
     .pipe(bulkSass())
-    .pipe(sass({outputStyle: "expanded", sourcemap:true}))
+    // .pipe(sass({outputStyle: "expanded", sourcemap:true})) // cssを展開する。
+    .pipe(sass({outputStyle: "compressed", sourcemap:false})) // cssを圧縮する。
     .pipe(autoprefixer('last 2 versions', 'ie 8', 'ie 9'))
     .pipe(gulp.dest('static/css/'))
     .pipe(browserSync.reload({stream:true}));
@@ -92,7 +93,7 @@ gulp.task('sass', function() {
 gulp.task('js', function () {
   gulp.src(["source/js/**/*.js","!source/js/**/_*.js"])
  .pipe(plumber())
- // .pipe(uglify())
+ // .pipe(uglify()) // jsを圧縮する。console関数も無視する。
  .pipe(gulp.dest('static/js/'))
  .pipe(browserSync.reload({stream:true}));
 });
