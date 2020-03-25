@@ -608,7 +608,7 @@ html {
 body {
   font-size: 1.3rem;
   line-height: 1.8;
-  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, Sans-Serif;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Meiryo", "メイリオ", Osaka, "MS PGothic", "ＭＳ Ｐゴシック", Helvetica, Arial, Sans-Serif;
   color: #505050;
   text-align: left;
   background-color: #FFF;
@@ -620,9 +620,24 @@ a {
   transition: all 0.2s;
 }
 
+@media only screen and (min-width: 768px) {
+  a:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+  }
+}
+
 img {
   width: 100%;
   vertical-align: bottom;
+}
+
+ul {
+  padding-left: 0;
+}
+
+figure {
+  margin: 0;
 }
 
 .header {
@@ -690,5 +705,3 @@ img {
 .footer .copy {
   text-align: center;
 }
-
-/*# sourceMappingURL=style.css.map */
