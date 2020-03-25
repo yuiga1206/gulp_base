@@ -4,7 +4,6 @@ var plumber = require("gulp-plumber");
 var sass = require('gulp-sass');
 var bulkSass = require('gulp-sass-bulk-import');
 var autoprefixer = require("gulp-autoprefixer");
-var sourcemaps = require("gulp-sourcemaps");
 var ejs = require("gulp-ejs");
 var rename = require("gulp-rename");
 var browserSync = require('browser-sync').create();
@@ -83,13 +82,9 @@ gulp.task('ejs', function() {
 gulp.task('sass', function() {
   gulp.src(["source/scss/**/*.scss","!source/scss/**/_*.scss"])
     .pipe(plumber())
-    .pipe(sourcemaps.init())
     .pipe(bulkSass())
     .pipe(sass({outputStyle: "expanded", sourcemap:true}))
     .pipe(autoprefixer('last 2 versions', 'ie 8', 'ie 9'))
-    .pipe(sourcemaps.write('./', {
-      includeContent: false
-    }))
     .pipe(gulp.dest('static/css/'))
     .pipe(browserSync.reload({stream:true}));
 });
