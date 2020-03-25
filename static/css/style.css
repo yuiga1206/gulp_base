@@ -606,12 +606,24 @@ html {
 }
 
 body {
-  font-size: 1.3rem;
+  font-size: 3.33333vw;
   line-height: 1.8;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Meiryo", "メイリオ", Osaka, "MS PGothic", "ＭＳ Ｐゴシック", Helvetica, Arial, Sans-Serif;
   color: #505050;
   text-align: left;
   background-color: #FFF;
+}
+
+@media screen and (min-width: 768px), print {
+  body {
+    font-size: 1.66667vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 a {
