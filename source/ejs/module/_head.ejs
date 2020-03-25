@@ -1,7 +1,4 @@
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title><%- pageData['title'] %></title>
@@ -59,4 +56,17 @@
     <script defer>
       window.jQuery || document.write('<script src="js/jquery-3.4.1.min.js"><\/script>')
     </script>
+
+
+    <!-- lazyload用 -->
+    <!-- intersection-observer.js & yall.min.js -->
+    <script src="js/lazy.min.js" defer></script>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function() {
+        yall({
+          observeChanges: true
+        });
+      });
+    </script>
+    <!-- lazyload用 -->
   </head>

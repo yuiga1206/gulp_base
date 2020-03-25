@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja" prefix="og: http://ogp.me/ns#">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title></title>
@@ -51,6 +48,19 @@
     <script defer>
       window.jQuery || document.write('<script src="js/jquery-3.4.1.min.js"><\/script>')
     </script>
+
+
+    <!-- lazyload用 -->
+    <!-- intersection-observer.js & yall.min.js -->
+    <script src="js/lazy.min.js" defer></script>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function() {
+        yall({
+          observeChanges: true
+        });
+      });
+    </script>
+    <!-- lazyload用 -->
   </head>
 
   <body class="top">
@@ -87,6 +97,23 @@
       <section>
         <h2>見出し2</h2>
         <p>テキストテキスト</p>
+      </section>
+      <section>
+        <h2>見出し2</h2>
+        <p>テキストテキスト</p>
+        <p>テキストテキスト</p>
+        <p>テキストテキスト</p>
+        <p>テキストテキスト</p>
+        <p>テキストテキスト</p>
+        <p>テキストテキスト</p>
+        <p>テキストテキスト</p>
+        <p>テキストテキスト</p>
+        <p>テキストテキスト</p>
+        <p>テキストテキスト</p>
+      </section>
+      <section>
+        <h2>見出し2</h2>
+        <p><img class="lazy" src="img/dummy_img_01.png" data-src="img/lazyload.png" alt="lazyload"></p>
       </section>
     </main>
 
