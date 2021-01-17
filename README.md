@@ -114,7 +114,6 @@
 
 Node/gulpをインストールしていない場合は、下記URLを参考にグローバルインストールしておいてください。  
 
-* https://docs.google.com/spreadsheets/d/1MMuW4NP_efFy7wiOouYzxlPaIe9ho2Pd1IZjiR8K3kI/edit?pli=1#gid=1814540919
 * windows
 	* https://mseeeen.msen.jp/windows-nodejs-gulpjs-install/
 
@@ -135,35 +134,3 @@ README.md
 ---
 
 ---
-
-## **公開方法 / 納品形式**
---
-
----
-
----
-
-## **資料**
-* Reforma番号：--
-* PJ資料：--
-* Dropbox上のパス：--
-
----
-
----
-
-## **体制**
-* director：--
-* designer：--
-* engineer：--
-
----
-
----
-
-## **その他**
-
----
-
----
-
