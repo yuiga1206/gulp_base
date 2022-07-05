@@ -1,5 +1,9 @@
 node_modules/
+Thumbs.db
 .DS_Store
+.sass-cashe
+.idea
+
 wp-admin/
 wp-includes/
 wp-content/uploads/
@@ -12,6 +16,7 @@ wp-activate.php
 wp-blog-header.php
 wp-comments-post.php
 wp-config-sample.php
+wp-config.php
 wp-cron.php
 wp-links-opml.php
 wp-load.php
